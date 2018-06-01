@@ -57,14 +57,17 @@ The UMI sequences need to be included in the RX tag header in the BAM file.
 	perl smMIP_UMI_filtering.pl [mutation position] [input bam] [sample name] > [output]
 
 [mutation position]:
+
   Comma separated text file with "chrom,position,refBase,mutBase" 
 
 [input bam]:
+
   SORTED BAM file.
   Before the alignment, the smMIP fastq has to be clipped so that the 
   UMI's could be found back.
 
 [sample name]:
+
   Unique name for each sample runs to prevent the intermediate files to be overwritten.
   Does not affect on the output. 
 
@@ -74,22 +77,42 @@ The UMI sequences need to be included in the RX tag header in the BAM file.
 
 Tab delimited text file with the following columns: 
   
-chr         Chromosome number (provided by the input file)
+chr
+
+  Chromosome number (provided by the input file)
   
-pos         Chromosome coordinate (provided by the input file)
+pos
+
+  Chromosome coordinate (provided by the input file)
   
-ref         Reference base (provided by the input file)
+ref
+
+  Reference base (provided by the input file)
   
-alt         Mutated variant base (provided by the input file)
+alt
+
+  Mutated variant base (provided by the input file)
   
-totalUMI    Total number of UMI covering the position
+totalUMI
+
+  Total number of UMI covering the position
   
-A           Total number of UMI supporting A at the position
+A
+
+  Total number of UMI supporting A at the position
  
-T           Total number of UMI supporting T at the position
+T
+
+  Total number of UMI supporting T at the position
   
-G           Total number of UMI supporting G at the position
+G
+
+  Total number of UMI supporting G at the position
   
-C           Total number of UMI supporting C at the position
+C
+
+  Total number of UMI supporting C at the position
   
-VAF         Allele frequency for alt-base calculated from the number of UMI's
+VAF
+
+  Allele frequency for alt-base calculated from the number of UMI's
