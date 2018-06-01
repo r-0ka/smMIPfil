@@ -46,7 +46,8 @@ The script assumes there is a tmp directory under the working directory.
 
 
 # Usage:
-perl smMIP_UMI_filtering.pl [mutation position] [input bam] [sample name] > [output]
+
+	perl smMIP_UMI_filtering.pl [mutation position] [input bam] [sample name] > [output]
 
   [mutation position]:
     Comma separated text file with "chrom,position,refBase,mutBase" 
