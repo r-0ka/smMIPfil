@@ -56,17 +56,17 @@ The UMI sequences need to be included in the RX tag header in the BAM file.
 
 	perl smMIP_UMI_filtering.pl [mutation position] [input bam] [sample name] > [output]
 
-  [mutation position]:
-    Comma separated text file with "chrom,position,refBase,mutBase" 
+[mutation position]:
+  Comma separated text file with "chrom,position,refBase,mutBase" 
 
-  [input bam]:
-	  SORTED BAM file.
-	  Before the alignment, the smMIP fastq has to be clipped so that the 
-     UMI's could be found back.
+[input bam]:
+  SORTED BAM file.
+  Before the alignment, the smMIP fastq has to be clipped so that the 
+  UMI's could be found back.
 
-  [sample name]:
-    Unique name for each sample runs to prevent the intermediate files to be overwritten.
-    Does not affect on the output. 
+[sample name]:
+  Unique name for each sample runs to prevent the intermediate files to be overwritten.
+  Does not affect on the output. 
 
 
 
