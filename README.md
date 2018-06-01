@@ -21,7 +21,7 @@ What this script does:
                  = 250 / (5 + 0 + 250 + 45)
                  ~ 0.83
 
-(6) WHen the fraction was above 0.7, then the UMI is kept with the nucleotide.
+(6) When the fraction was above 0.7, then the UMI is kept with the nucleotide.
     ALl the UMI's with lower fraction are discarded.  
 
     With the example above, the UNI would be kept as G-supporting.  
@@ -38,11 +38,16 @@ samtools
 
 
 
-# Before running
+# Before running (script requirement)
 
 Please modify the working directory in the script ($wk_dir)
 The script assumes there is a tmp directory under the working directory. 
 
+
+
+# Before running (input requirement)
+
+The UMI sequences need to be included in the RX tag header in the BAM file. 
 
 
 # Usage:
@@ -76,13 +81,3 @@ The script assumes there is a tmp directory under the working directory.
   G           Total number of UMI supporting G at the position
   C           Total number of UMI supporting C at the position
   VAF         Allele frequency for alt-base calculated from the number of UMI's
-
-
-
-
-
-
-
-Version 2 (2018/05/22 - Rurika): 
-   Lowered the threashold of when the substitution was called as valid
-   from 100% (no mismatch allowed) to 70%
