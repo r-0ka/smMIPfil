@@ -11,7 +11,7 @@ use List::Util 'sum';
 # calculate total number of UMI's and VAFs for the mutated base. 
 #
 # Usage:
-# perl /hpc/pmc_vanboxtel/tools/scripts/smMIP_UMI_filtering.pl \
+# perl smMIP_UMI_filtering.pl \
 #	[mutation position] [input bam] [sample name] > [output]
 #
 # [mutation position]:
