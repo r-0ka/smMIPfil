@@ -40,6 +40,8 @@ samtools
 
 # Before running (script requirement)
 
+This is a stand-alone perl script.  Except that this is dependent on the samtools, no installation required.  
+
 Please modify the working directory in the script ($wk_dir)
 The script assumes there is a tmp directory under the working directory. 
 
@@ -69,15 +71,25 @@ The UMI sequences need to be included in the RX tag header in the BAM file.
 
 
 # Output
-  Tab delimited text file with the following columns: 
+
+Tab delimited text file with the following columns: 
   
-  chr         Chromosome number (provided by the input file)
-  pos         Chromosome coordinate (provided by the input file)
-  ref         Reference base (provided by the input file)
-  alt         Mutated variant base (provided by the input file)
-  totalUMI    Total number of UMI covering the position
-  A           Total number of UMI supporting A at the position
-  T           Total number of UMI supporting T at the position
-  G           Total number of UMI supporting G at the position
-  C           Total number of UMI supporting C at the position
-  VAF         Allele frequency for alt-base calculated from the number of UMI's
+chr         Chromosome number (provided by the input file)
+  
+pos         Chromosome coordinate (provided by the input file)
+  
+ref         Reference base (provided by the input file)
+  
+alt         Mutated variant base (provided by the input file)
+  
+totalUMI    Total number of UMI covering the position
+  
+A           Total number of UMI supporting A at the position
+ 
+T           Total number of UMI supporting T at the position
+  
+G           Total number of UMI supporting G at the position
+  
+C           Total number of UMI supporting C at the position
+  
+VAF         Allele frequency for alt-base calculated from the number of UMI's
