@@ -24,7 +24,7 @@ What this script does:
 (6) When the fraction was above 0.7, then the UMI is kept with the nucleotide.
     ALl the UMI's with lower fraction are discarded.  
 
-    With the example above, the UNI would be kept as G-supporting.  
+    With the example above, the UMI would be kept as G-supporting.  
 
 (7) At the step (6), the number of supported nucleotides is counted.
 
