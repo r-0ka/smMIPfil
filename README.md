@@ -42,8 +42,8 @@ samtools
 
 This is a stand-alone perl script.  Except that this is dependent on the samtools, no installation required.  
 
-Please modify the working directory in the script ($wk_dir)
-The script assumes there is a tmp directory under the working directory. 
+Please modify the working directory in the script ($wk_dir).
+The script assumes there is a tmp directory under the working directory and actually this is the only place this working directory is used. 
 
 
 
