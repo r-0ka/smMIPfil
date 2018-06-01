@@ -3,40 +3,14 @@ use strict;
 use warnings;
 use List::Util 'sum';
 
-#############################################################################
-# 
-# This script extracts UMIs containing single base at mutation point
-# (all reads with the same UMI must contain the same base),
-# split the UMI's by the nucleotide at the mutation point, count them,
-# calculate total number of UMI's and VAFs for the mutated base. 
-#
-# Usage:
-# perl smMIP_UMI_filtering.pl \
-#	[mutation position] [input bam] [sample name] > [output]
-#
-# [mutation position]:
-#    Comma separated with "chrom,position,refBase,mutBase" 
-#    This file is expected to be SORTED
-#
-# [input bam]:
-#	SORTED BAM file.
-#	Before the alignment, the smMIP fastq has to be clipped so that the 
-#   UMI's could be found back.
-#   This BAM file also has to be SORTED.
-#
-#
-# Version 2 (2018/05/22 - Rurika): 
-#   Lowered the threashold of when the substitution was called as valid
-#   from 100% (no mismatch allowed) to 70%
-#
-#
-##############################################################################
+	### NEED TO BE MODIFIED !!! ###
+ my $wk_dir = '/[wkdir]' ;
+	### NEED TO BE MODIFIED !!! ###
 
  my $mip_pos_file = $ARGV[0];
  my $bam_file = $ARGV[1];
-my $sample_name = $ARGV[2];
+ my $sample_name = $ARGV[2];
 
- my $wk_dir = '/hpc/pmc_vanboxtel/projects/Rurika_smMIP' ;
 
 open( my $fh_pos, '<:encoding(UTF-8)', $mip_pos_file )
   or die "Could not open file '$mip_pos_file' $!";
