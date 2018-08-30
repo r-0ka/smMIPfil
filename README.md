@@ -77,42 +77,42 @@ The UMI sequences need to be included in the RX tag header in the BAM file.
 
 Tab delimited text file with the following columns: 
   
-chr
+* chr
 
   Chromosome number (provided by the input file)
   
-pos
+* pos
 
   Chromosome coordinate (provided by the input file)
   
-ref
+* ref
 
   Reference base (provided by the input file)
   
-alt
+* alt
 
   Mutated variant base (provided by the input file)
   
-totalUMI
+* totalUMI
 
   Total number of UMI covering the position
   
-A
+* A
 
   Total number of UMI supporting A at the position
  
-T
+* T
 
   Total number of UMI supporting T at the position
   
-G
+* G
 
   Total number of UMI supporting G at the position
   
-C
+* C
 
   Total number of UMI supporting C at the position
   
-VAF
+* VAF
 
   Allele frequency for alt-base calculated from the number of UMI's
